@@ -60,7 +60,7 @@ if($btnCadUsuario){
             
                 <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br><br>
             
-                <input type="submit" name="btnCadUsuario" value="Cadastrar">
+                <input type="submit" name="btnCadUsuario" value="Cadastrar"><a href = Administrador.php>   Voltar </a>
             </form>
         </center>
         

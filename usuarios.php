@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once("conexao.php");
-echo"Olá ".$_SESSION['nome'].", Bem Vindo <br>";
+echo"Olá ".$_SESSION['nome'].", Bem Vindo! <br>";
 ?>
 <!DOCTYPE html>
 <html lang ="pt-br">
@@ -22,8 +22,10 @@ echo"Olá ".$_SESSION['nome'].", Bem Vindo <br>";
                 <center><h5>BAKOFTEC TRANSPORTES</h5></center>
             </div>
         </header>
-        <h1>BAKOFTEC</h1>
-        <button type="button"> Heloo</button> 
+        <center>
+            
+            <button type="button"> Heloo</button>
+        </center>    
     </body>
 
 

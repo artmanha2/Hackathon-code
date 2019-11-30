@@ -42,7 +42,7 @@ if($btnCadUsuarioAD){
         </header>
         
         <center>
-            <h3><p class="text-success">Insira as informações do ADMIN!</p></h3>
+            <h3><p class="text-success">Insira as informações da Venda!</p></h3>
             <form method="POST" action="">
             
                 <h5>Nome</h5><input type="text" name="nome" placeholder="Nome"><br>

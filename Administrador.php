@@ -1,3 +1,8 @@
+<?php
+session_start();
+include_once("conexao.php");
+echo"Olá ".$_SESSION['nome'].", Bem Vindo! <br>";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -11,35 +16,26 @@
 
     <body>
         <header>
-            <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h3>BAKOFTEC -> ADMINISTRADORES </h3></center>
+           <div class="p-3 mb-2 bg-secondary text-white">
+                <center><h5>BAKOFTEC TRANSPORTES</h5></center>
             </div>
         </header>
-        
         <center>
-            
-            <h5>CPF</h5><input type="number" name="cpf" placeholder="CPF "><br>
-            
-            <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br>
-            
-            <input type="submit" name="btnLogin" value="Acessar">
-            <button type="submit" href ="cadastraradmin.php"> CAD</button>
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-primary" type="submit"> Cadastrar Motorista </button></form>
         
+            
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Cadastrar ADMINISTRADOR </button></form>
+            
+            
+             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-primary" type="submit"> Cadastrar vendas </button></form>
+            
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Vendas </button></form>
+            
+             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-primary" type="submit"> Cadastrar Motorista </button></form>
+            
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Cadastrar ADMINISTRADOR </button></form>
         </center>
-        
-        
     </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
+       
 </html>
