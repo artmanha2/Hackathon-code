@@ -36,7 +36,7 @@ if($btnCadUsuario){
     <body>
          <header>
             <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h3>BAKOFTEC -> CADASTROS/ADMIN</h3></center>
+                <center><h3>BAKOFTEC -> CADASTROSADMIN</h3></center>
             </div>
         </header>
         
@@ -45,7 +45,7 @@ if($btnCadUsuario){
             <form method="POST" action="">
             
                 <h5>Usuário</h5><input type="text" name="usuario" placeholder="Usuário"><br>
-
+            
             
                 <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br><br>
             

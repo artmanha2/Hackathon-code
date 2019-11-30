@@ -23,6 +23,7 @@
             <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br>
             
             <input type="submit" name="btnLogin" value="Acessar">
+            <button type="submit" href ="cadastraradmin.php"> CAD</button>
         
         </center>
         
