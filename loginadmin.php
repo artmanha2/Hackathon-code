@@ -14,7 +14,7 @@ session_start();
     <body>
         <header>
            <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h5>BAKOFTEC ADMINISTRADORES</h5></center>
+                <center><h5>BAKOF TEC - ADMINISTRADORES</h5></center>
             </div>
         </header>
         <center>
@@ -27,11 +27,11 @@ session_start();
             ?>
             <form method="POST" action="validaAD.php">
             
-                <input type="text" name="usuario" placeholder="Insirá seu Usuário"><br><br>
+                <input type="text" name="usuario" placeholder="Insira seu Usuário"><br><br>
             
                 <input type="password" name="senha" placeholder="Digite sua senha"><br><br>
             
-                <input type="submit" name="btnLoginA" value="Acessar">
+                <input type="submit" name="btnLoginA" value="Acessar"> <a href="index.html">Página Principal</a> 
             </form>
         </center>
         

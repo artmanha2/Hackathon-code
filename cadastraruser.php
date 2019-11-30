@@ -40,7 +40,7 @@ if($btnCadUsuario){
     <body>
          <header>
             <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h3>BAKOFTEC -> CADASTROS</h3></center>
+                <center><h3>BAKOF TEC - CADASTROS</h3></center>
             </div>
         </header>
         

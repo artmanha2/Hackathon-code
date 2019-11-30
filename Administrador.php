@@ -17,24 +17,28 @@ echo"Olá ".$_SESSION['nome'].", Bem Vindo! <br>";
     <body>
         <header>
            <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h5>BAKOFTEC TRANSPORTES</h5></center>
+                <center><h5>BAKOF TEC - TRANSPORTES</h5></center>
             </div>
         </header>
         <center>
             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-primary" type="submit"> Cadastrar Motorista </button></form>
         
             
-            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Cadastrar ADMINISTRADOR </button></form>
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Cadastrar Administrador </button></form>
             
             
-             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-primary" type="submit"> Cadastrar vendas </button></form>
+             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastrarvendas.php"><button class="btn btn-primary" type="submit"> Cadastrar Vendas </button></form>
             
-            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Vendas </button></form>
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/vendas.php"><button class="btn btn-warning" type="submit"> Vendas </button></form>
             
-             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-primary" type="submit"> Cadastrar Motorista </button></form>
+             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/infoentrega.php"><button class="btn btn-primary" type="submit"> Informações de Entrega </button></form>
             
-            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraradmin.php"><button class="btn btn-warning" type="submit"> Cadastrar ADMINISTRADOR </button></form>
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-warning" type="submit"> Perda de Carga </button></form>
+            
+            
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/loginadmin.php"><button class="btn btn-primary" type="submit"> Sair </button></form>
         </center>
+       
     </body>
 
        

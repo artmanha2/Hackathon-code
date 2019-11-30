@@ -18,15 +18,15 @@ if($btnLoginA){
                 
                 header("Location: Administrador.php");
             }else{
-                $_SESSION['msg'] = "Página não encontrada1";
+                $_SESSION['msg'] = "Usuário ou Senha Invalidos!";
                 header("Location: loginadmin.php");   
             }
         }
     }else{
-        $_SESSION['msg'] = "Página não encontrada2";
+        $_SESSION['msg'] = "Usuário ou Senha Invalidos!";
         header("Location: loginadmin.php");
     }
 }else{
-    $_SESSION['msg'] = "Página não encontrada3";
+    $_SESSION['msg'] = "Usuário ou Senha Invalidos!";
     header("Location: loginadmin.php");
 }

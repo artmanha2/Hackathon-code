@@ -1,5 +1,7 @@
 <?php
 session_start();
+$btnLoginB = filter_input(INPUT_POST, 'btnLoginB', FILTER_SANITIZE_STRING);
+$_SESSION['msg1'] = name['valer'];
 ?>
 
 <!DOCTYPE html>
@@ -9,16 +11,16 @@ session_start();
         <meta name="viewport", content="width=device-width, initial-scale=1.0" />
         <link href= "css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script href= "text/javascript" src="js/bootstrap.min.js" ></script>
-        <title>BACKOF TEC - Loginuser</title>
+        <title>BACKOF TEC - perda</title>
     </head>
     <body>
         <header>
            <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h5>BAKOF TEC - MOTORISTAS</h5></center>
+                <center><h5>BAKOF TEC - Perda de Carga</h5></center>
             </div>
         </header>
         <center>
-            <h2>Login Usuários</h2>
+            <h2>Perda de material</h2>
             <?php
                 if(isset($_SESSION['msg'])){
                     echo$_SESSION['msg'];
@@ -27,11 +29,11 @@ session_start();
             ?>
             <form method="POST" action="valida.php">
             
-                <input type="number" name="cpf" placeholder="Insirá seu CPF"><br><br>
+                <input type="text" name="valer" placeholder="Qual material foi perdido?"><br><br>
+                
+                <input type="button" name="btnLoginB" value="Enviar para Fábrica"> <a href = usuarios.php>   Voltar </a>
             
-                <input type="password" name="senha" placeholder="Digite sua senha"><br><br>
-            
-                <input type="submit" name="btnLogin" value="Acessar"><a href="index.html">Página Principal</a>
+                
         
         
             </form>

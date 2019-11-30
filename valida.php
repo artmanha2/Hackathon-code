@@ -18,15 +18,15 @@ if($btnLogin){
                 
                 header("Location: usuarios.php");
             }else{
-                $_SESSION['msg'] = "Página não encontrada1";
+                $_SESSION['msg'] = "Usuário ou Senha Invalidos!";
                 header("Location: loguinuser.php");   
             }
         }
     }else{
-        $_SESSION['msg'] = "Página não encontrada2";
+        $_SESSION['msg'] = "Usuário ou Senha Invalidos!";
         header("Location: loguinuser.php");
     }
 }else{
-    $_SESSION['msg'] = "Página não encontrada3";
+    $_SESSION['msg'] = "Usuário ou Senha Invalidos!";
     header("Location: loguinuser.php");
 }

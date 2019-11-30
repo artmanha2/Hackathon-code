@@ -1,27 +1,7 @@
 <?php
 session_start();
 ob_start();
-$btnCadUsuarioAD = filter_input(INPUT_POST, 'btnCadUsuarioAD', FILTER_SANITIZE_STRING);
-if($btnCadUsuarioAD){
-	include_once 'conexao.php';
-	$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-	
-    $dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
-	
-	$result_admin = "INSERT INTO BAKOFTECA (nome, usuario, senha) VALUES (
-                    '" .$dados['nome']. "',
-					'" .$dados['usuario']. "',
-					'" .$dados['senha']. "'
-					)";
-	$resultado_admin = mysqli_query($conn, $result_admin);
-	if(mysqli_insert_id($conn)){
-		$_SESSION['msgcad'] = "ADMIN cadastrado com sucesso";
-		header("Location: Administrador.php");
-	}else{
-		$_SESSION['msg'] = "Erro ao cadastrar o usuário";
-	}
-}
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +17,7 @@ if($btnCadUsuarioAD){
     <body>
          <header>
             <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h3>BAKOFTEC -> CADASTROS_AD</h3></center>
+                <center><h3>BAKOF TEC - Vendas</h3></center>
             </div>
         </header>
         
@@ -45,11 +25,20 @@ if($btnCadUsuarioAD){
             <h3><p class="text-success">Insira as informações da Venda!</p></h3>
             <form method="POST" action="">
             
-                <h5>Nome</h5><input type="text" name="nome" placeholder="Nome"><br>
+                <h5>Nome do Comprador</h5><input type="text" name="" placeholder="Nome Completo"><br><br>
                 
-                <h5>Usuário</h5><input type="text" name="usuario" placeholder="Usuário"><br>
+                <h5>CPF</h5><input type="number" name="" placeholder="CPF"><br><br>
+                
+                <h5>CEP</h5><input type="number" name="" placeholder="CEP"><br><br>
+                
+                <h5>Modelos</h5><input type="checkbox" name="" placeholder="Produtos">   <input type="checkbox" name="" placeholder="Produtos">     <input type="checkbox" name="" placeholder="Produtos"><br><br>
             
-                <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br><br>
+                <h5>Quantidade</h5><input type="number" name="" placeholder="Quantidade"><br><br>
+                
+                <h5>Data da Venda</h5><input type="date" name="" placeholder="dd/mm/aaaa"><br><br>
+                
+
+                
             
                 <input type="submit" name="btnCadUsuarioAD" value="Cadastrar"> <a href = Administrador.php>   Voltar </a>
             </form>
