@@ -1,5 +1,7 @@
 <?php
-
+session_start();
+include_once("conexao.php");
+echo"Olá".$_SESSION['nome'].", Bem Vindo <br>";
 ?>
 <!DOCTYPE html>
 <html lang ="pt-br">

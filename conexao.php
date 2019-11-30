@@ -1,10 +1,10 @@
 <?php
-    $servidor =  "localhost";
-    $usuario = "root";
-    $senha = "";
-    $dbname = "vitor_schneider";
+    $servername = "localhost"; 
+    $username = "vitor_schneider"; 
+    $password = "d9g3gyz2";
+    $dbname = "vitor_schneider"; 
 
     //conexão
 
-    $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
         

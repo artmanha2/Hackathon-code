@@ -10,8 +10,11 @@ if($btnLoguin){
         $result_cpf = "SELECT ID, nome, rg, email, celular, senha FROM BAKOFTEC WHERE cpf='$cpf' LIMIT 1";
         $resultado_cpf = mysqli_query($conn, $result_cpf);
         if($resultado_cpf){
-            $row_usuario = mysqli_fetch_assoc($resultado_cpf);
-            if(password_verify($senha, $row_usuario['senha'])){
+            $row_cpf = mysqli_fetch_assoc($resultado_cpf);
+            if(password_verify($senha, $row_cpf['senha'])){
+                $_SESSION['ID'] = $row_cpf['ID'];
+                $_SESSION['nome'] = $row_cpf['nome'];
+                
                 header("Location: usuarios.php");
             }else{
                 $_SESSION['msg'] = "Página não encontrada";

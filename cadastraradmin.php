@@ -9,12 +9,8 @@ if($btnCadUsuario){
 	
     $dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
 	
-	$result_usuario = "INSERT INTO BAKOFTEC (nome, email, celular, cpf, rg, senha) VALUES (
-					'" .$dados['nome']. "',
-					'" .$dados['email']. "',
-                    '" .$dados['celular']. "',
-                    '" .$dados['cpf']. "',
-                    '" .$dados['rg']. "',
+	$result_usuario = "INSERT INTO BAKOFTEC (usuario, senha) VALUES (
+					'" .$dados['usuario']. "',
 					'" .$dados['senha']. "'
 					)";
 	$resultado_usario = mysqli_query($conn, $result_usuario);
@@ -40,23 +36,16 @@ if($btnCadUsuario){
     <body>
          <header>
             <div class="p-3 mb-2 bg-secondary text-white">
-                <center><h3>BAKOFTEC -> CADASTROS</h3></center>
+                <center><h3>BAKOFTEC -> CADASTROS/ADMIN</h3></center>
             </div>
         </header>
         
         <center>
-            <h3><p class="text-success">Insira as informações do motorista!</p></h3>
+            <h3><p class="text-success">Insira as informações do ADMINISTRADOR!</p></h3>
             <form method="POST" action="">
             
-                <h5>Nome</h5><input type="text" name="nome" placeholder="Nome completo"><br>
-            
-                <h5>E-mail</h5><input type="email" name="email" placeholder="E-mail"><br>
-            
-                <h5>Celular</h5><input type="tel" name="celular" placeholder="Telefone / Celular"><br>
-            
-                <h5>CPF</h5><input type="number" name="cpf" placeholder="CPF"><br>
-            
-                <h5>RG</h5><input type="number" name="rg" placeholder="RG"><br>
+                <h5>Usuário</h5><input type="text" name="usuario" placeholder="Usuário"><br>
+
             
                 <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br><br>
             
