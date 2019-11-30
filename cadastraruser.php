@@ -1,3 +1,31 @@
+<?php
+session_start();
+ob_start();
+$btnCadUsuario = filter_imput(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRING);
+if($btnCadUsuario){
+	include_once 'conexao.php';
+	$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+	//var_dump($dados);
+	$dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
+	
+	$result_usuario = "INSERT INTO usuarios (nome, email, celular, cpf, rg, senha) VALUES (
+					'" .$dados['nome']. "',
+					'" .$dados['email']. "',
+                    '" .$dados['celular']. "',
+                    '" .$dados['cpf']. "',
+                    '" .$dados['rg']. "',
+					'" .$dados['senha']. "'
+					)";
+	$resultado_usario = mysqli_query($conn, $result_usuario);
+	if(mysqli_insert_id($conn)){
+		$_SESSION['msgcad'] = "Usuário cadastrado com sucesso";
+		header("Location: Administrador.php");
+	}else{
+		$_SESSION['msg'] = "Erro ao cadastrar o usuário";
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -17,17 +45,22 @@
         
         <center>
             <h3><p class="text-success">Insira as informações do motorista!</p></h3>
+            <form method="POST" action="">
             
-            <h5>Nome</h5><input type="text" name="nome" placeholder="Nome completo"><br>
+                <h5>Nome</h5><input type="text" name="nome" placeholder="Nome completo"><br>
             
-            <h5>E-mail</h5><input type="email" name="email" placeholder="E-mail"><br>
+                <h5>E-mail</h5><input type="email" name="email" placeholder="E-mail"><br>
             
-            <h5>Celular</h5><input type="tel" name="celular" placeholder="Telefone / Celular"><br>
+                <h5>Celular</h5><input type="tel" name="celular" placeholder="Telefone / Celular"><br>
             
-            <h5>CPF</h5><input type="number" name="cpf" placeholder="CPF "><br>
+                <h5>CPF</h5><input type="number" name="cpf" placeholder="CPF"><br>
             
-            <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br>
+                <h5>RG</h5><input type="number" name="rg" placeholder="RG"><br>
             
+                <h5>Senha</h5><input type="password" name="senha" placeholder="Senha"><br><br>
+            
+                <input class="btn btn-primary" type="submit" name="btnCadUsuario" value="Cadastrar">
+            </form>
         </center>
         
     
