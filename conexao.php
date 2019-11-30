@@ -2,7 +2,7 @@
     $servidor =  "localhost";
     $usuario = "root";
     $senha = "";
-    $dbname = "appbakof";
+    $dbname = "vitor_schneider";
 
     //conexão
 
