@@ -31,6 +31,8 @@ $_SESSION['msg1'] = name['valer'];
             
                 <input type="text" name="valer" placeholder="Qual material foi perdido?"><br><br>
                 
+                <input type="number" name="valer" placeholder="Nº Nota fiscal"><br><br>
+                
                 <input type="button" name="btnLoginB" value="Enviar para Fábrica"> <a href = usuarios.php>   Voltar </a>
             
                 

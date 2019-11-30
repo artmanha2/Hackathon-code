@@ -33,7 +33,7 @@ echo"Olá ".$_SESSION['nome'].", Bem Vindo! <br>";
             
              <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/infoentrega.php"><button class="btn btn-primary" type="submit"> Informações de Entrega </button></form>
             
-            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/cadastraruser.php"><button class="btn btn-warning" type="submit"> Perda de Carga </button></form>
+            <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/perdaA.php"><button class="btn btn-warning" type="submit"> Perda de Carga </button></form>
             
             
             <form method="get" action="http://inf.fw.iffarroupilha.edu.br/~vitor.schneider/BAKOFTEC/loginadmin.php"><button class="btn btn-primary" type="submit"> Sair </button></form>

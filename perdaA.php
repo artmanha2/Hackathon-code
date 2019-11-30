@@ -23,7 +23,9 @@ session_start();
             
                 <input type="" name="" placeholder=""><br><br>
                 
-                <a href = usuarios.php>   Voltar </a>
+                <input type="number" name="" placeholder="Nº nota fiscal"><br><br>
+                
+                <a href = Administrador.php>   Voltar </a>
             
                 
         
